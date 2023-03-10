@@ -1,0 +1,165 @@
+/* Global variables */
+:root {
+    /* Colors */
+    --black-color: #000000;
+    --high-black-color: #151719;
+    --medium-black-color: #25282C;
+    --light-black-color: #33363A;
+    --light-purple-color: #5D5DFF;
+    --medium-purple-color: #4B4ACF;
+    --medium-lilac-color: #8D8DFF;
+    --light-lilac-color: #ABABFF;
+    --light-beige-color: #E2E1FF;
+    --white-color: #FFFFFF;
+    --medium-white-color: #D9E3EA;
+    --high-gray-color: #9BA9B4;
+    --medium-gray-color: #C5D2DC;
+    --mdeium-green-color: #36A269;
+    --lime-color: #C6F6D5;
+
+          
+    /* Fonts */
+    --default-font: 'Inter', sans-serif;
+}
+
+/* Styles normilize */
+
+html {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: var(--default-font);
+    color: var(--medium-white-color);
+    /* background-color: var(--high-black-color); */
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+/* Main styles */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+}
+
+#sign-in {
+    margin-right: 50px;
+    font-size: 16px;
+    color: var(--light-purple-color);
+}
+
+#sign-up {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: var(--light-purple-color);
+    color: var(--white-color);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-inner {
+    width: 1200px;
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+.short-offer-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.short-offer-description > h1 + p,
+.feautures > h2 + p,
+.benefits > h2 + p,
+.reviews > h2 + p{
+    font-size: 20px;
+    color: var(--high-gray-color);
+    margin-top: 20px;
+}
+
+.description-links {
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-links li:first-child {
+    margin-right: 12px;
+    background-color: var(--light-purple-color);
+}
+
+.description-links li:first-child a {
+    display: block;
+    padding: 12px 32px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.description-links li:last-child {
+    background-color: var(--light-black-color);
+}
+
+.description-links li:last-child a {
+    display: block;
+    padding: 12px 32px;
+    color: var(--medium-gray-color);
+    text-align: center;
+}
+
+.video {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feautures {
+    margin-top: 128px;
+}
