@@ -1,5 +1,6 @@
 /* Global variables */
 :root {
+
     /* Colors */
     --black-color: #000000;
     --high-black-color: #151719;
@@ -18,12 +19,15 @@
     --medium-gray-color: #C5D2DC;
     --mdeium-green-color: #36A269;
     --lime-color: #C6F6D5;
+    /*  */
 
           
     /* Fonts */
     --default-font: 'Inter', sans-serif;
     --architects-daughter-font: 'Architects Daughter', cursive;
+    /*  */
 }
+/*  */
 
 /* Styles normilize */
 
@@ -74,6 +78,7 @@ ul, li {
 .visually-hidden {
     display: none;
 }
+/*  */
 
 /* Main styles */
 
@@ -629,3 +634,4 @@ ul.social-links li a:hover {
 ul.social-links li:not(:last-child) {
     margin-right: 16px;
 }
+/*  */
