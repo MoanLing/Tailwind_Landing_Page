@@ -635,3 +635,26 @@ ul.social-links li:not(:last-child) {
     margin-right: 16px;
 }
 /*  */
+
+/* Cusom scroll styles */
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--light-purple-color);
+}
+
+
+body.show-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--light-purple-color);
+}
+/*  */
