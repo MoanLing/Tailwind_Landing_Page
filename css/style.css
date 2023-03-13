@@ -489,7 +489,7 @@ form.form input#subscribe-mail-input {
     background-color: var(--medium-purple-color);
     box-shadow: 0 0 5px 1px transparent;
     color: var(--light-lilac-color);
-    transition: box-shadow .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 form.form input#subscribe-mail-input:focus {
@@ -500,11 +500,13 @@ form.form button#subscribe-btn {
     padding: 12px 32px;
     border: 1px solid var(--light-white-color);
     background-color: var(--light-white-color);
+    box-shadow: 0 0 5px 1px transparent;
     color: var(--light-purple-color);
     transition: all .5s ease-in-out;
 }
 
 form.form button#subscribe-btn:hover {
+    box-shadow: 0 0 5px 1px var(--black-color);
     background-color: var(--high-purple-color);
     color: var(--light-white-color);
     cursor: pointer;
@@ -583,6 +585,7 @@ a.company-links-main-title-link:hover,
 ul.products-links li a:hover,
 ul.resources-links li a:hover,
 ul.company-links li a:hover {
+    text-decoration: underline;
     color: var(--light-purple-color);
     cursor: pointer;
 }
