@@ -152,6 +152,7 @@ main {
 }
 
 .short-description-title {
+    margin-bottom: 15px;
     font-size: 52px;
     font-weight: 700;
     color: var(--medium-white-color);
@@ -267,10 +268,6 @@ ul.feautures-items li:nth-child(n+4) {
     border-radius: 32px;
     background-color: var(--light-purple-color);
     margin-bottom: 16px;
-}
-
-ul.feautures-items li:nth-child(3n) {
-    margin-right: 0;
 }
 
 .feautures-main-title {
@@ -397,6 +394,7 @@ h2.reviews-main-title {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 p.reviews-main-content {
@@ -482,8 +480,8 @@ form.form {
 }
 
 form.form input#subscribe-mail-input {
-    width: 100%;
-    padding: 12px 178px 12px 16px;
+    width: 300px;
+    padding: 12px;
     margin-right: 8px;
     border: 1px solid var(--medium-lilac-color);
     background-color: var(--medium-purple-color);
@@ -660,4 +658,302 @@ body::-webkit-scrollbar-thumb:hover {
 body.show-scroll::-webkit-scrollbar-thumb {
     background-color: var(--light-purple-color);
 }
+/*  */
+
+/* Media queries */
+
+@media (max-width: 3840px) and (min-width: 768px){
+    ul.feautures-items li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 1220px) {
+    .main-inner {
+        width: 768px;
+    }
+
+    .video-element {
+        width: 600px;
+    }
+
+    .benefit-image {
+        width: 350px;
+    }
+
+    .short-description-title,
+    .feautures-main-title,
+    .reviews-main-title {
+        font-size: 32px;
+    }
+
+    .features-item-title {
+        font-size: 21px;
+    }
+
+    .features-item-content {
+        font-size: 14px;
+    }
+
+    li.other-info-description-item {
+        margin-right: 100px;
+    }
+
+    ul.other-info-links li.products-links-elements,
+    ul.other-info-links li.resources-links-elements {
+        margin-right: 40px;
+    }
+
+    form.form input#subscribe-mail-input {
+        padding: 8px;
+        width: 150px;
+    }
+
+    section.subscribe {
+        padding: 34px 24px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-inner {
+        width: 425px;
+    }
+
+    .video-element {
+        width: 400px;
+    }
+
+    .short-description-title,
+    .feautures-main-title,
+    .reviews-main-title {
+        font-size: 27px;
+    }
+
+    /* .features-item-title {
+        font-size: 18px;
+    } */
+
+    .benefit-image {
+        width: 280px;
+    }
+
+    h3.benefit-description-title {
+        font-size: 27px;
+    }
+
+    p.benefit-content {
+        font-size: 16px;
+    }
+
+    ul.benefit-inner-elements {
+        flex-direction: column;
+    }
+
+    ul.benefit-inner-elements.rw-revrs {
+        flex-direction: column;
+    }
+
+    li.other-info-description-item {
+        margin-right: 50px;
+    }
+
+    ul.benefit-inner-elements li.benefit-element-description:not(li.li-rw-revrs) {
+        margin-right: 0;
+    }
+
+    ul.benefit-inner-elements.rw-revrs li.li-rw-revrs {
+        margin-left: 0;
+    }
+
+    ul.other-info-links li.products-links-elements,
+    ul.other-info-links li.resources-links-elements {
+        margin-right: 20px;
+    }
+
+    p.other-info-content {
+        font-size: 14px;
+    }
+
+    li.other-info-links-item ul.other-info-links {
+        flex-direction: column;
+    }
+
+    h2.subscribe-main-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p.subscribe-main-content {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    ul.subscribe-elements {
+        flex-direction: column;
+    }
+
+    ul.subscribe-elements li:first-child {
+        margin-right: 0;
+    }
+
+    li.subscribe-description {
+        margin-bottom: 20px;
+    }
+
+    ul.reviews-items li blockquote {
+        padding: 12px;
+    }
+
+    p.reviewer-feedback {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+
+    ul.reviews-items li blockquote img.abslt-quote-img {
+        left: 50px;
+    }
+
+    /* h2.short-description-title,
+    h2.feautures-main-title,
+    h2.reviews-main-title {
+        font-size: 16px;
+    } */
+
+    .short-description-content {
+        font-size: 14px;
+    }
+
+    ul.feautures-items li {
+        height: auto;
+        width: calc(100% / 2 - 15px);
+        margin: 0 30px 30px 0;
+    }
+
+    ul.feautures-items li:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    ul.feautures-items li:nth-child(n) {
+        margin-bottom: 30px;
+    }
+
+    .features-item img {
+        padding: 14px;
+    }
+/* 
+    .features-item-content {
+        font-size: 14px;
+    } */
+
+    ul.reviews-items li:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    h2.reviews-main-title {
+        font-size: 27px;
+    }
+
+    .short-offer-description > h1 + p,
+    .feautures > h2 + p,
+    .benefits > h2 + p,
+    .reviews > h2 + p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .main-inner {
+        width: 279px;
+        padding: 0 10px;
+    }
+
+    ul.feautures-items {
+        flex-direction: column;
+    }
+
+    ul.feautures-items li {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .video-element {
+        width: 200px;
+    }
+
+    #sign-in {
+        margin-right: 15px;
+    }
+
+    .benefit-image {
+        width: 250px;
+    }
+
+    .description-links {
+        flex-direction: column;
+    }
+
+    .description-links li:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    ul.reviews-items {
+        flex-direction: column;
+    }
+
+    ul.reviews-items li:nth-child(n) {
+        margin-right: 0;
+    }
+
+    ul.reviews-items li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    form.form {
+        flex-direction: column;
+    }
+
+    form.form input#subscribe-mail-input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    ul.other-info-items {
+        flex-direction: column;
+    }
+
+    li.other-info-description-item {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .other-info-links-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .other-info-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .other-info-links li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    section.footer {
+        flex-direction: column-reverse;
+    }
+
+    ul.social-links {
+        margin-bottom: 20px;
+    }
+
+}
+
 /*  */
